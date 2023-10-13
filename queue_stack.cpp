@@ -5,11 +5,6 @@ template <typename T, typename Container = std::deque<T>>
 class Queue
 {
   public:
-  using container_type  = Container;
-  using value_type      = typename Container::value_type;
-  using size_type       = typename Container::size_type;
-  using reference       = typename Container::reference;
-  using const_reference = typename Container::const_reference;
 
   T& front()
   {
@@ -26,7 +21,7 @@ class Queue
     return container.empty();
   }
 
-  size_type size()
+  size_t size()
   {
     return container.size();
   }
@@ -54,11 +49,6 @@ template <typename T, typename Container = std::deque<T>>
 class Stack
 {
   public:
-  using container_type  = Container;
-  using value_type      = typename Container::value_type;
-  using size_type       = typename Container::size_type;
-  using reference       = typename Container::reference;
-  using const_reference = typename Container::const_reference;
 
   T& top()
   {
@@ -70,7 +60,7 @@ class Stack
     return container.empty();
   }
 
-  size_type size()
+  size_t size()
   {
     return container.size();
   }
