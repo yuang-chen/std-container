@@ -12,7 +12,7 @@ A binary heap is a complete binary tree in which every level, except possibly th
 is *completely filled*, and all nodes are as *left* as possible.
 
 Order Property:
-for the max heap, std::less(parent->value, child->value) === false
+for the max heap, if std::less(parent->value, child->value), swap parent->value and child->value
 
 
 For a given element at index i:
